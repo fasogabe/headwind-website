@@ -28,6 +28,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script
+      src="https://kit.fontawesome.com/03dfb58f85.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
@@ -35,13 +39,10 @@
 
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img
-            src="img/PNG/Headwind_Brand Design Export Files 10SEP2020-09.png"
-            height="60"
-          />
+          <img src="img/logo_PNG/logo_09.png" height="60" />
         </a>
         <button
           class="navbar-toggler"
@@ -63,40 +64,39 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="/projects.html">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="/contact.html">Contact</a>
             </li>
           </ul>
+          <span class="navbar-text ml-auto">
+            <a href="https://www.instagram.com/headwindconstruction/"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <!-- <a href="https://www.instagram.com/headwindconstruction/"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a> -->
+          </span>
         </div>
       </div>
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead text-white text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto"></div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
-              <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0"></div>
-              </div>
-            </form>
-          </div>
-        </div>
+    <div class="masthead">
+      <div class="background">
+        <img src="img/logo_PNG/logo_10.png" class="overlay" />
       </div>
-    </header>
+    </div>
 
-    <!-- Quote -->
-    <section class="features-icons">
+    <!-- Motto -->
+    <section class="motto">
       <div class="container">
         <div class="row">
+          <div class="col-2"></div>
           <div class="col-6">
             <h3>HEADWIND</h3>
             <br />
@@ -105,12 +105,8 @@
               A wind blowing from directly in front, opposing forward motion.
             </p>
           </div>
-          <div class="col-6">
-            <h5 class="mb-5">
-              As an organization, we reclaim this word and reflect the forces
-              opposing forward motion. We are a movement, a wind blowing in a
-              new direction. Relentlessly demanding forward motion.
-            </h5>
+          <div class="col-3">
+            <i class="fas fa-wind fa-8x"></i>
           </div>
         </div>
       </div>
@@ -118,51 +114,46 @@
 
     <!-- Image Showcases -->
     <section class="showcase">
-      <div class="container-fluid p-0">
+      <div class="container showcase-container border border-dark p-0">
         <div class="row no-gutters">
           <div
-            class="col-lg-6 order-lg-2 text-white showcase-img"
-            style="background-image: url('img/bg-showcase-1.jpg')"
+            class="col-lg-6 order-lg-2 showcase-img"
+            style="background-image: url('img/photos/railing_closeup.jpg')"
           ></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <p class="lead mb-0">
-              Our color palette reflects the materials we build with, and the
-              optimism with which we see the future
+              As an organization, we reclaim this word and reflect the forces
+              opposing forward motion.
             </p>
           </div>
         </div>
         <div class="row no-gutters">
           <div
-            class="col-lg-6 text-white showcase-img"
-            style="background-image: url('img/bg-showcase-2.jpg')"
+            class="col-lg-6 showcase-img"
+            style="background-image: url('img/photos/playground_01.jpg')"
           ></div>
           <div class="col-lg-6 my-auto showcase-text">
             <p class="lead mb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              We are a movement, a wind blowing in a new direction toward a more
+              ecologically sustainable environment.
             </p>
           </div>
         </div>
         <div class="row no-gutters">
           <div
-            class="col-lg-6 order-lg-2 text-white showcase-img"
-            style="background-image: url('img/bg-showcase-3.jpeg')"
+            class="col-lg-6 order-lg-2 showcase-img"
+            style="background-image: url('img/photos/overhang_closeup.jpg')"
           ></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <p class="lead mb-0">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              Built to last, with earth healthy materials.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- Meet the Team -->
     <section class="testimonials text-center">
       <div class="container">
         <h2 class="mb-5">Meet the Team</h2>
@@ -263,7 +254,7 @@
               &copy; Headwind Construction 2020. All Rights Reserved.
             </p>
           </div>
-          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <!-- <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item mr-3">
                 <a class="link-color" href="#">
@@ -281,9 +272,24 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
 </html>
