@@ -1,0 +1,29 @@
+{
+  "name": "headwind",
+  "version": "1.0.0",
+  "description": "Headwind Construction website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fasogabe/headwind-website.git"
+  },
+  "author": "Fabian Gaspero-Beckstrom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fasogabe/headwind-website/issues"
+  },
+  "homepage": "https://github.com/fasogabe/headwind-website#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.16"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
