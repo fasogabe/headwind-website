@@ -60,8 +60,8 @@
 }
 
 .column {
-  float: left;
-  width: 16.66%;
+  /* float: left; */
+  width: 25%;
 }
 
 .demo {
