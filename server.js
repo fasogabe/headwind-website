@@ -41,7 +41,7 @@ app.post('/send-email', (req, res) => {
   // Specify email format
   const mailOpts = {
     from: 'headwind.mailer',
-    to: 'omicronesta@gmail.com', // Temporary. add headwind emails thru dotenv
+    to: 'ryan@headwindconstruction.com', // Temporary. add headwind emails thru dotenv
     subject: 'test',
     text: `Message from ${req.body.name} (${req.body.email}): \n\n ${req.body.message}`
   };
