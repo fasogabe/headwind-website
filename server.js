@@ -4,8 +4,8 @@ const ejs = require('ejs');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
-GMAIL_USER = 'headwind.mailer@gmail.com';
-GMAIL_PASS = 'pH5)Q9qsG@Ug}N>v';
+GMAIL_USER = process.env.MAILER_USER;
+GMAIL_PASS = process.env.MAILER_PASS;
 
 const app = express();
 
@@ -15,15 +15,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('pages/index');
+  res.render('pages/index', {page_name: 'home'});
 });
 
 app.get('/projects', (req, res) => {
-  res.render('pages/projects');
+  res.render('pages/projects', {page_name: 'projects'});
 });
 
 app.get('/contact', (req, res) => {
-  res.render('pages/contact');
+  res.render('pages/contact', {page_name: 'contact'});
 });
 
 app.post('/send-email', (req, res) => {
@@ -41,7 +41,7 @@ app.post('/send-email', (req, res) => {
   // Specify email format
   const mailOpts = {
     from: 'headwind.mailer',
-    to: 'ryan@headwindconstruction.com', // Temporary. add headwind emails thru dotenv
+    to: 'omicronesta@gmail.com', // Temporary. add headwind emails thru dotenv
     subject: 'test',
     text: `Message from ${req.body.name} (${req.body.email}): \n\n ${req.body.message}`
   };

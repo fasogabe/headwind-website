@@ -17,18 +17,16 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/"
-            >Home <span class="sr-only">(current)</span></a
-          >
+        <li class="nav-item <%= page_name === 'home' && 'active' %>">
+          <a class="nav-link" href="/">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav- <%= page_name === 'projects' && 'active' %>">
           <a class="nav-link" href="/projects">Projects</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
         </li> -->
-        <li class="nav-item">
+        <li class="nav-item <%= page_name === 'contact' && 'active' %>">
           <a class="nav-link" href="/contact">Contact</a>
         </li>
       </ul>
