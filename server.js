@@ -59,7 +59,7 @@ app.post('/send', (req, res) => {
     // Specify email format
     const mail = {
       from: { name: data.name, address: data.email },
-      to: [address1, address2], // Temporary - Add headwind emails thru dotenv
+      to: [address1, address2],
       subject: `New message from ${data.name}`,
       text: data.message,
     };
