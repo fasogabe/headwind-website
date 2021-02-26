@@ -11,7 +11,7 @@ const app = express();
 
 // Contact form submission email recipients
 const address1 = process.env.HEADWIND_EMAIL_1;
-const address2 = null;
+const address2 = process.env.HEADWIND_EMAIL_TEST;
 const address3 = null;
 
 // Middleware
@@ -59,7 +59,7 @@ app.post('/send', (req, res) => {
     // Specify email format
     const mail = {
       from: { name: data.name, address: data.email },
-      to: address1, // Temporary - Add headwind emails thru dotenv
+      to: [address1, address2], // Temporary - Add headwind emails thru dotenv
       subject: `New message from ${data.name}`,
       text: data.message,
     };
