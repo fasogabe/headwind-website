@@ -10,7 +10,7 @@ require('dotenv').config();
 const app = express();
 
 // Contact form submission email recipients
-const address1 = process.env.HEADWIND_EMAIL_TEST;
+const address1 = process.env.HEADWIND_EMAIL_1;
 const address2 = null;
 const address3 = null;
 
