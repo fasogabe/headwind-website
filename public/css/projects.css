@@ -1,4 +1,31 @@
-* {
+.grid-container {
+  display: grid;
+}
+
+.gallery {
+  max-width: 1200px;
+  border: #fff solid 3px;
+  background: #fff;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+@media (max-width: 600px) {
+  .imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* * {
   box-sizing: border-box;
 }
 
@@ -61,7 +88,7 @@
 
 .column {
   /* float: left; */
-  width: 25%;
+/* width: 25%;
 }
 
 .demo {
@@ -72,4 +99,4 @@
 .active,
 .demo:hover {
   opacity: 1;
-}
+} */

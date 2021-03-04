@@ -9,33 +9,55 @@
     <%- include('../partials/_nav') %>
 
     <!-- Masthead -->
-    <div class="masthead">
-      <div class="background">
-        <img src="img/logo_PNG/logo_10.png" class="overlay" />
+    <header id="masthead">
+      <img
+        src="img/logo_PNG/logo_10.png"
+        class="img-fluid"
+        id="masthead-logo"
+      />
+      <div class="text-center" id="masthead-motto">
+        <h3>
+          Bringing together years of experience to deliver Earth-conscious,
+          quality craft that is built to last
+        </h3>
       </div>
-    </div>
+    </header>
 
     <!-- Motto -->
     <section class="motto">
-      <div class="container">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-8">
-            <h2>HEADWIND <i class="fas fa-wind fa-lg ml-3"></i></h2>
-            <br />
-            <h5>NOUN</h5>
-            <p>
-              A wind blowing from directly in front, opposing forward motion.
-            </p>
-          </div>
-          <div class="col-2"></div>
-        </div>
-      </div>
+      <div class="container text-center"></div>
     </section>
 
     <!-- Image Showcases -->
-    <section class="showcase">
-      <div class="container showcase-container border border-dark p-0">
+    <section id="showcase">
+      <h1 class="mb-5 section-heading">Our Work</h1>
+      <div class="container showcase-container p-0">
+        <div class="row no-gutters">
+          <div
+            class="col-lg-6 order-lg-2 showcase-img"
+            style="background-image: url('img/photos/lees_deck.jpeg')"
+          ></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text p-5">
+            <h3 class="showcase-heading mb-3">Outdoor Decks & Patios</h3>
+            <p class="lead mb-0">
+              We do decks. We are good at decks. Our decks are cool. We have
+              proof. We love building decks and decks love being built by us.
+            </p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div
+            class="col-lg-6 showcase-img"
+            style="background-image: url('img/photos/floor.jpg')"
+          ></div>
+          <div class="col-lg-6 my-auto showcase-text p-5">
+            <h3 class="showcase-heading mb-3">Flooring</h3>
+            <p class="lead mb-0">
+              We do floors. We are good at floors. Our floors are cool. We have
+              proof. We love building floors and floors love being built by us.
+            </p>
+          </div>
+        </div>
         <div class="row no-gutters">
           <div
             class="col-lg-6 order-lg-2 showcase-img"
@@ -43,37 +65,25 @@
               background-image: url('img/photos/kristens_floor/IMG_0337.jpeg');
             "
           ></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text p-5">
+            <h3 class="showcase-heading mb-3">Stairs</h3>
             <p class="lead mb-0">
-              As an organization, we reclaim this word and reflect the forces
-              opposing forward motion.
+              We do stairs. We are good at stairs. Our stairs are cool. We have
+              proof. We love building stairs and stairs love being built by us.
             </p>
           </div>
         </div>
         <div class="row no-gutters">
           <div
             class="col-lg-6 showcase-img"
-            style="
-              background-image: url('img/photos/cedarsaint_deck/IMG_0257.jpeg');
-            "
+            style="background-image: url('img/photos/pergola.jpg')"
           ></div>
-          <div class="col-lg-6 my-auto showcase-text">
+          <div class="col-lg-6 my-auto showcase-text p-5">
+            <h3 class="showcase-heading mb-3">Miscellaneous</h3>
             <p class="lead mb-0">
-              We are a movement, a wind blowing in a new direction toward a more
-              ecologically sustainable environment.
-            </p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div
-            class="col-lg-6 order-lg-2 showcase-img"
-            style="
-              background-image: url('img/photos/kristens_floor/20200703_175655.jpg');
-            "
-          ></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <p class="lead mb-0">
-              Built to last, with earth healthy materials.
+              We do cabinets. We are good at benches. Our bookshelves are cool.
+              We have proof. We love building pergolas and pergolas love being
+              built by us.
             </p>
           </div>
         </div>
@@ -81,44 +91,124 @@
     </section>
 
     <!-- Meet the Team -->
-    <section class="testimonials text-center">
-      <div class="container">
-        <h2 class="mb-5">Meet the Team</h2>
+    <section id="about">
+      <h1 class="mb-5 section-heading">The Headwind Team</h1>
+      <div class="container text-center">
         <div class="row">
           <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <div class="about-item mx-auto mb-5 mb-lg-0">
               <img
-                class="img-fluid rounded-circle mb-3"
+                class="img-fluid rounded-circle mb-4"
                 src="img/testimonials-1.jpg"
                 alt=""
               />
               <h5>Tucker</h5>
-              <p class="font-weight-light mb-0">Co-founder</p>
+              <p class="font-weight-light mb-0 ml-2 text-lg-left">
+                With over 7 years of experience Tucker has been steadily
+                improving his craft, previously working under carpenters with
+                decades of experience. With a passion for quality and natural
+                building he looks for ways to build with more earth friendly
+                materials. For fun he likes to bike, climb, hike, camp, and
+                immerse himself in the wilderness.
+              </p>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <div class="about-item mx-auto mb-5 mb-lg-0">
               <img
-                class="img-fluid rounded-circle mb-3"
+                class="img-fluid rounded-circle mb-4"
                 src="img/testimonials-2.jpg"
                 alt=""
               />
               <h5>Ryan</h5>
-              <p class="font-weight-light mb-0">Co-founder</p>
+              <p class="font-weight-light mb-0 ml-2 text-lg-left">
+                With nearly 15 years of experience in the commercial and
+                residential industry as a carpenter and project manager, Ryan
+                has been slowly building his career to this point. He has a
+                bachelors degree in Construction Management and a Masters degree
+                in City Planning; and he's been working with his Uncle through a
+                variety of trades since he was 15. Carpentry has always been a
+                passion. For fun Ryan enjoys hiking, camping, skiing and playing
+                the guitar.
+              </p>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <div class="about-item mx-auto mb-5 mb-lg-0">
               <img
-                class="img-fluid rounded-circle mb-3"
+                class="img-fluid rounded-circle mb-4"
                 src="img/testimonials-3.jpg"
                 alt=""
               />
               <h5>Dan</h5>
-              <p class="font-weight-light mb-0">Co-founder</p>
+              <p class="font-weight-light mb-0 ml-1 text-lg-left">
+                Is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised
+                in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <div class="container">
+        <h1 class="mb-5 text-center section-heading">Contact Us</h1>
+        <form
+          action="/send"
+          id="contact-form"
+          method="POST"
+          enctype="multipart/form-data"
+          role="form"
+        >
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="contactFormName">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="contactFormName"
+                placeholder="Name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="contactFormEmail">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="contactFormEmail"
+                placeholder="name@example.com"
+                name="email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactFormMessage">Message</label>
+            <textarea
+              class="form-control"
+              id="contactFormMessage"
+              rows="5"
+              name="message"
+              placeholder="Type message here..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" value="submit" class="btn btn-info">
+            Send
+          </button>
+        </form>
       </div>
     </section>
 

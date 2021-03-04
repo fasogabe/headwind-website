@@ -5,12 +5,128 @@
   </head>
   <body>
     <!-- Navigation -->
-    <%- include('../partials/_nav') %> 
-    <br>
+    <%- include('../partials/_nav') %>
 
-    <div class="container">
+    <div class="container" style="display: hidden">
+      <div class="row row-cols-4 justify-content-between">
+        <div class="card col m-3 pt-2">
+          <img
+            src="img/photos/cedarsaint_deck/IMG_0257.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Cedarsaint Deck</h5>
+            <p class="card-text">This is our cedarsaint deck project.</p>
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="modal"
+              data-target="#modal-1"
+            >
+              View Photos
+            </button>
+          </div>
+        </div>
+        <div class="card col m-3 pt-2">
+          <img
+            src="img/photos/cedarsaint_deck/IMG_0257.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-info">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col m-3 pt-2">
+          <img
+            src="img/photos/cedarsaint_deck/IMG_0257.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-info">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col m-3 pt-2">
+          <img
+            src="img/photos/cedarsaint_deck/IMG_0257.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-info">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cedarsaint Deck</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid gallery">
+              <div class="main-img">
+                <img
+                  src="img/photos/cedarsaint_deck/IMG_0265.jpeg"
+                  id="current"
+                />
+              </div>
+
+              <div class="imgs">
+                <img src="img/photos/cedarsaint_deck/IMG_0265.jpeg" />
+                <img src="img/photos/cedarsaint_deck/IMG_0266.jpeg" />
+                <img src="img/photos/cedarsaint_deck/IMG_0270.jpeg" />
+                <img src="img/photos/cedarsaint_deck/IMG_0262.jpeg" />
+                <img src="img/photos/cedarsaint_deck/IMG_0261.jpeg" />
+                <img src="img/photos/cedarsaint_deck/IMG_0257.jpeg" />
+                <img src="img/photos/cedarsaint_deck/FGZS3229.jpeg" />
+                <img src="img/photos/cedarsaint_deck/20200423_152453.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <!-- 
+    <div class="container"> -->
     <!-- Project 1 -->
-      <div class="slideshow-1 card p-5 bg-dark">
+    <!-- <div class="slideshow-1 card p-5 bg-dark">
         <div class="slideshow-1-main">
           <div class="slides">
             <div class="numbertext">Cedarsaint Deck - 1/4</div>
@@ -28,13 +144,12 @@
             <div class="numbertext">Cedarsaint Deck - 4/4</div>
             <img src="img/photos/cedarsaint_deck/IMG_0270.jpeg" style="width:100%">
           </div>
-        </div>
+        </div> -->
 
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a> -->
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-        <a class="next" onclick="plusSlides(1)">&#10095</a>
-
-        <br>
+    <!-- <br>
         <div class="row">
           <div class="column">
             <img src="img/photos/cedarsaint_deck/IMG_0257.jpeg" class="demo cursor" onclick="currentSlide(1)">
@@ -50,10 +165,10 @@
           </div>
         </div>
       </div>
-      <br>
+      <br> -->
 
-      <!-- Project 2 -->
-      <!-- <div class="slideshow-1 card p-5 bg-dark">
+    <!-- Project 2 -->
+    <!-- <div class="slideshow-1 card p-5 bg-dark">
         <div class="slideshow-1-main">
           <div class="slides">
             <div class="numbertext">Cedarsaint Deck - 1/4</div>
@@ -93,8 +208,8 @@
           </div>
         </div>
       </div> -->
-      <!-- Project 2 -->
-      <!-- <div id="slideshow-2" class="carousel slide" data-interval="false">
+    <!-- Project 2 -->
+    <!-- <div id="slideshow-2" class="carousel slide" data-interval="false">
         <ol class="carousel-indicators">
           <li data-target="#slideshow-2" data-slide-to="0" class="active"></li>
           <li data-target="#slideshow-2" data-slide-to="1"></li>
@@ -120,12 +235,10 @@
           <span class="sr-only">Next</span>
         </a>
       </div> -->
-    </div>
+    <!-- </div> -->
 
     <!-- Footer -->
     <%- include('../partials/_footer') %>
-    
-
   </body>
   <script src="js/projects.js"></script>
   <%- include('../partials/_scripts') %>

@@ -1,35 +1,48 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+img[0].style.opacity = opacity;
+imgs.addEventListener('click', (e) => {
+  img.forEach((img) => (img.style.opacity = 1));
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+  current.src = e.target.src;
+  e.target.style.opacity = opacity;
+});
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName('slides');
-  let dots = document.getElementsByClassName('demo');
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
+// function plusSlides(n) {
+//   showSlides((slideIndex += n));
+// }
 
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+// function currentSlide(n) {
+//   showSlides((slideIndex = n));
+// }
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName('slides');
+//   let dots = document.getElementsByClassName('demo');
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active', '');
-  }
+//   if (n > slides.length) {
+//     slideIndex = 1;
+//   }
 
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
-}
+//   if (n < 1) {
+//     slideIndex = slides.length;
+//   }
+
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = 'none';
+//   }
+
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(' active', '');
+//   }
+
+//   slides[slideIndex - 1].style.display = 'block';
+//   dots[slideIndex - 1].className += ' active';
+// }

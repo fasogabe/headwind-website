@@ -22,17 +22,7 @@ app.set('view engine', 'ejs');
 
 // Home page
 app.get('/', (req, res) => {
-  res.render('pages/index', { page_name: 'home' });
-});
-
-// Projects page
-app.get('/projects', (req, res) => {
-  res.render('pages/projects', { page_name: 'projects' });
-});
-
-// Contact page
-app.get('/contact', (req, res) => {
-  res.render('pages/contact', { page_name: 'contact' });
+  res.render('pages/index');
 });
 
 // Mailgun

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="img/logo_PNG/logo_09.png" height="60" />
@@ -17,22 +17,38 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item <%= page_name === 'home' && 'active' %>">
-          <a class="nav-link" href="/">Home</a>
+        <li
+          class="nav-item"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <a class="nav-link" href="#masthead">Home</a>
         </li>
-        <li class="nav- <%= page_name === 'projects' && 'active' %>">
-          <a class="nav-link" href="/projects">Projects</a>
+        <li
+          class="nav-item"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <a class="nav-link" href="#showcase">Projects</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li> -->
-        <li class="nav-item <%= page_name === 'contact' && 'active' %>">
-          <a class="nav-link" href="/contact">Contact</a>
+        <li
+          class="nav-item"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li
+          class="nav-item"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
       <span class="navbar-text ml-auto">
         <a href="https://www.instagram.com/headwindconstruction/"
-          ><i class="fab fa-instagram fa-2x"></i
+          ><i class="bi bi-instagram" style="font-size: 1.5rem"></i
         ></a>
       </span>
     </div>
