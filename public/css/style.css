@@ -79,7 +79,7 @@ body {
 
 .showcase-container {
   background-color: #fffaf0;
-  border: 2px solid #cbb08d;
+  border: 3px solid #cbb08d;
 }
 
 .showcase-heading {
@@ -95,7 +95,24 @@ body {
   min-height: 30rem;
   background-size: cover;
 }
-
+.showcase-img-top {
+  border-left: 3px solid #cbb08d;
+  border-bottom: 3px solid #cbb08d;
+}
+.showcase-img-left {
+  border-top: 3px solid #cbb08d;
+  border-right: 3px solid #cbb08d;
+  border-bottom: 3px solid #cbb08d;
+}
+.showcase-img-right {
+  border-top: 3px solid #cbb08d;
+  border-left: 3px solid #cbb08d;
+  border-bottom: 3px solid #cbb08d;
+}
+.showcase-img-bottom {
+  border-top: 3px solid #cbb08d;
+  border-right: 3px solid #cbb08d;
+}
 @media (min-width: 768px) {
   .showcase-text {
     padding: 7rem;
