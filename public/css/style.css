@@ -8,65 +8,70 @@ html {
 }
 
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #2a565b;
   padding: 0;
   margin: 0;
 }
 
-/* nav {
-  background-color: #2a565b;
+.btn-red {
   color: #fffaf0;
-} */
+  background-color: #dd5758;
+}
+
 #navbar {
   /* font-family: 'Work Sans' sans-serif; */
   background-color: #2a565b;
   color: #fffaf0;
   top: 0;
   transition: top 0.3s;
+  border-bottom: 3px solid #cbb08d;
 }
 #navbar a {
   font-family: 'Noto Sans' sans-serif !important;
 }
 
-.section-heading {
+.section-header {
   color: #fffaf0;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #masthead {
-  background-image: url('../img/coniferous-forest.jpg');
-  height: 1000px;
+  background-image: url('../img/mounthood3.jpg');
+  height: 900px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 3px solid #cbb08d;
 }
 #masthead-logo {
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 490px;
+  height: 500px;
 }
 #masthead-motto {
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fffaf0;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 2rem;
+  color: #181715;
+}
+#masthead-motto h3 {
+  font-weight: bold;
+  font-size: 20pt;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   #masthead {
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
-  #masthead-motto {
-    font-size: 1rem;
+  #masthead-motto h3 {
+    font-size: 20pt;
+    padding-top: 7rem;
   }
 }
 
@@ -95,24 +100,28 @@ body {
   min-height: 30rem;
   background-size: cover;
 }
-.showcase-img-top {
-  border-left: 3px solid #cbb08d;
-  border-bottom: 3px solid #cbb08d;
+
+@media (min-width: 992px) {
+  .showcase-img-top {
+    border-left: 3px solid #cbb08d;
+    border-bottom: 3px solid #cbb08d;
+  }
+  .showcase-img-left {
+    border-top: 3px solid #cbb08d;
+    border-right: 3px solid #cbb08d;
+    border-bottom: 3px solid #cbb08d;
+  }
+  .showcase-img-right {
+    border-top: 3px solid #cbb08d;
+    border-left: 3px solid #cbb08d;
+    border-bottom: 3px solid #cbb08d;
+  }
+  .showcase-img-bottom {
+    border-top: 3px solid #cbb08d;
+    border-right: 3px solid #cbb08d;
+  }
 }
-.showcase-img-left {
-  border-top: 3px solid #cbb08d;
-  border-right: 3px solid #cbb08d;
-  border-bottom: 3px solid #cbb08d;
-}
-.showcase-img-right {
-  border-top: 3px solid #cbb08d;
-  border-left: 3px solid #cbb08d;
-  border-bottom: 3px solid #cbb08d;
-}
-.showcase-img-bottom {
-  border-top: 3px solid #cbb08d;
-  border-right: 3px solid #cbb08d;
-}
+
 @media (min-width: 768px) {
   .showcase-text {
     padding: 7rem;
@@ -121,7 +130,6 @@ body {
 
 #about {
   color: #fffaf0;
-  background-color: #2a565b;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
@@ -131,22 +139,34 @@ body {
 }
 
 #about .about-item img {
-  max-width: 14rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
+  max-width: 15rem;
+  border: 3px solid #cbb08d;
+}
+
+.bio-container {
+  color: #181715;
+  background-color: #fffaf0;
+  border: 3px solid #cbb08d;
 }
 
 #contact {
-  background-color: #2a565b;
   color: #fffaf0;
 }
 
+#contactFormName,
+#contactFormEmail,
+#contactFormMessage {
+  background-color: #fffaf0;
+}
+
 footer.footer {
-  background-color: #2a565b;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   bottom: 0;
 }
 
 .link-color {
   color: #dd5758 !important;
 }
+
+/* #e4e5e5 cool white*/
